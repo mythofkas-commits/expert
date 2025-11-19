@@ -42,9 +42,14 @@ def save_to_csv(data, filename="permits.csv"):
     df.to_csv(filename, index=False)
     print(f"Data saved to {filename}")
 
-if __name__ == "__main__":
+def main():
+    """
+    Main function to run the permit scraper.
+    """
     print("Starting permit scraper...")
-    # In a real scenario, this would be `scrape_permit_data()`
-    permit_data = generate_mock_permit_data()
+    permit_data = scrape_permit_data()
     save_to_csv(permit_data)
     print("Permit scraper finished.")
+
+if __name__ == "__main__":
+    main()
