@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pandas
+openai
+pdfplumber
+schedule
+python-dotenv
